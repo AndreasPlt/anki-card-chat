@@ -1,0 +1,24 @@
+[project]
+name = "anki-card-chat"
+version = "0.1.0"
+description = "Anki add-on: ask an agent CLI about the card under review"
+readme = "README.md"
+authors = [
+    { name = "Andreas Pletschko", email = "andreas.pletschko@gmail.com" }
+]
+requires-python = ">=3.9"
+dependencies = []
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "UP", "B", "SIM"]

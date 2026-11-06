@@ -1,0 +1,8 @@
+{
+    "shortcut": "c",
+    "cwd": "",
+    "first_turn": ["/opt/homebrew/bin/pi", "-p", "{prompt}", "--session-id", "{session}", "--model", "deepseek/deepseek-flash", "--thinking", "low", "--tools", "read,grep,find,ls"],
+    "next_turn": ["/opt/homebrew/bin/pi", "-p", "{prompt}", "--session-id", "{session}", "--model", "deepseek/deepseek-flash", "--thinking", "low", "--tools", "read,grep,find,ls"],
+    "timeout_s": 120,
+    "preamble": "I'm reviewing this Anki card right now and have a question about it. The <card> block holds the note's fields. Your answer is shown in a narrow side panel inside Anki: keep it short and to the point, and give pinyin with tone marks for any Chinese you use. Only read files, never change them."
+}
